@@ -56,10 +56,17 @@ main{
   margin: 5%;
 }
 
-@keyframes strikeThrough{
+/*@keyframes strikeThrough{
   from{text-decoration: none;}
   to{text-decoration: line-through;}
+}*/
+
+#jogo canvas{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 
 
