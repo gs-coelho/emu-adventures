@@ -1,9 +1,10 @@
 import { CenaCarregamento } from "./CenaCarregamento.js";
 import { CenaMenu } from "./CenaMenu.js";
+import { CenaJogo } from "./CenaJogo.js";
 
 let config = {
   type: Phaser.AUTO,
-  width: 800,
+  width: 900,
   height: 600,
   parent: 'jogo',
   physics: {
@@ -15,7 +16,7 @@ let config = {
       debug: true,
     },
   },
-  scene: [CenaCarregamento, CenaMenu],
+  scene: [CenaCarregamento, CenaMenu, CenaJogo],
 };
 
 let game = new Phaser.Game(config);
