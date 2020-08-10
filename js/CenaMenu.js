@@ -12,13 +12,14 @@ export class CenaMenu extends Phaser.Scene {
       .setScale(0.8, 0.8)
       .setOrigin(0, 0);
     const imagemJogar = this.add
-      .image(340, 400, "btnJogar")
+      .image(340, 450, "btnJogar")
       .setScale(0.5, 0.5)
       .setOrigin(0, 0)
       .setInteractive();
 
+      const imagemEma = this.add.image(150,430,"imgEma");
+
     imagemJogar.on("pointerdown", (pointer) => {
-      console.log("vavva");
       imagemJogar.setScale(0.6, 0.6);
       this.scene.start("CenaJogo");
     });

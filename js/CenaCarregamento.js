@@ -6,7 +6,6 @@ export class CenaCarregamento extends Phaser.Scene {
   }
   preload() {
     this.load.on("complete", () => {
-      console.log("bu");
       this.scene.start("CenaMenu");
     });
 
