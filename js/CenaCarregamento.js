@@ -6,7 +6,6 @@ export class CenaCarregamento extends Phaser.Scene {
   }
   preload() {
     this.load.on("complete", () => {
-      console.log("bu");
       this.scene.start("CenaMenu");
     });
 
@@ -16,6 +15,8 @@ export class CenaCarregamento extends Phaser.Scene {
     this.load.image("btnJogar", "img/jogar.png");
     this.load.image("chao", "img/chao-placeholder.png");
     this.load.image("plataforma", "img/plataforma-placeholder.png");
+    this.load.image("imgEma", "img/idle-ema.png");
+    game.load.audio('soundJogar', 'sounds/inicio-jogo.wav');
   }
   create() {}
   update() {}
