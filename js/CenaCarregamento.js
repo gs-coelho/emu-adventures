@@ -14,6 +14,8 @@ export class CenaCarregamento extends Phaser.Scene {
     this.load.image("fundo", "img/blue-bg.jpg");
     this.load.image("titulo", "img/emu-adventures.png");
     this.load.image("btnJogar", "img/jogar.png");
+    this.load.image("chao", "img/chao-placeholder.png");
+    this.load.image("plataforma", "img/plataforma-placeholder.png");
   }
   create() {}
   update() {}
