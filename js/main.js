@@ -6,14 +6,15 @@ let config = {
   type: Phaser.AUTO,
   width: 900,
   height: 600,
-  parent: 'jogo',
+  parent: "jogo",
+  pixelArt: true,
   physics: {
     default: "arcade",
     arcade: {
       gravity: {
         y: 100,
       },
-      debug: true,
+      debug: false,
     },
   },
   scene: [CenaCarregamento, CenaMenu, CenaJogo],
